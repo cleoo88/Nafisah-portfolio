@@ -1,0 +1,185 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Nafisah Amani — Portfolio</title>
+  <meta name="description" content="Personal portfolio of Nafisah Amani — Programmer, UI/UX, Database.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <h1 class="logo">NAFISAH AMANI</h1>
+        <p class="tagline">Programmer • UI/UX • Database</p>
+      </div>
+
+      <button id="nav-toggle" aria-expanded="false" aria-controls="nav" aria-label="Toggle navigation">
+        <span class="hamburger"></span>
+      </button>
+
+      <nav id="nav" class="site-nav" aria-label="Main navigation">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HOME / HERO -->
+    <section id="home" class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h2 id="typed-target" aria-live="polite">Hi, I'm Nafisah Amani.</h2>
+          <p class="lead">A programmer student who focused on C++, UI/UX design, and database system management.</p>
+
+          <div class="hero-cta">
+          <a class="btn" href="resume/Nafisah-Amani-Resume.pdf" download>View Resume</a>
+          <a class="btn btn-outline" href="#contact">Contact</a>
+        </div>
+
+        </div>
+
+        <div class="hero-card" aria-hidden="false">
+          <img src="images/profile2.jpg" alt="Profile photo of Nafisah Amani">
+          <p class="small muted">NAFISAH AMANI BINTI SHAHRIN SHAH</p>
+          <p class="small muted">fromnafisah@gmail.com</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <div class="container">
+        <h2 class="section-title">Projects</h2>
+        <p class="section-desc">Selected projects C++, UI/UX and database skills.</p>
+
+        <div class="projects-grid">
+          <!-- PAINT PROGRAM -->
+          <article class="project-card" tabindex="0">
+            <img src="images/project1.jpg" alt="screenshot of Paint Program">
+            <div class="project-body">
+              <h3>Project One — Paint Program</h3>
+              <p>Using a C++ language in creating a simple paint program with different sizes, shapes, and colors.</p>
+              <div class="project-actions">
+                <button class="btn small" data-project="1">View</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- ART APP -->
+          <article class="project-card" tabindex="0">
+            <img src="images/project2.jpg" alt="Screenshot of Project Two">
+            <div class="project-body">
+              <h3>Project Two — UI/UX ART App</h3>
+              <p>End-to-end UI/UX design for a mobile app, with user flows, wireframes and prototype for Kuching Utara Transportation System using Figma.</p>
+              <div class="project-actions">
+                <button class="btn small" data-project="2">View</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- CAR RENTAL DATABASE -->
+          <article class="project-card" tabindex="0">
+            <img src="images/project3.jpg" alt="Screenshot of Car Rental">
+            <div class="project-body">
+              <h3>Project Three — Car Rental Database Management</h3>
+              <p>Design and implementation of normalized database schema, queries using XAMPP and MySQL in developing a car rental website.</p>
+              <div class="project-actions">
+                <button class="btn small" data-project="3">View</button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Me -->
+    <section id="about" class="section alt">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-grid">
+          <div class="about-text">
+            <p><strong>NAFISAH AMANI BINTI SHAHRIN SHAH</strong> — Hi! I am a programmer skilled in <strong>C++</strong>, <strong>UI/UX</strong> and <strong>Database</strong> work. I build efficient applications and thoughtful user interfaces that focus on usability experience. I am currently enrolled in Universiti Malaysia Sarawak pursuing a Bachelor's Degree in Computer Science (Multimedia Computing). I value being surrounded by diverse and welcoming people.</p>
+          
+            <h4>Skills</h4>
+            <ul class="skills">
+              <li>C++</li>
+              <li>UI/UX Design (Figma)</li>
+              <li>Database design & SQL</li>
+            </ul>
+
+          <aside class="about-sidebar" aria-label="Contact and quick info">
+            <div class="card">
+              <h4>Contact</h4>
+              <p><a href="mailto:fromnafisah@gmail.com">fromnafisah@gmail.com</a></p>
+              <p>Location: Malaysia (example)</p>
+              <p>Availability: Open to opportunities</p>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <div class="container">
+        <h2 class="section-title">Contact</h2>
+        <p class="section-desc">Send a message — this is a front-end form (no backend). Replace the email in the mailto link if you prefer.</p>
+
+        <form id="contact-form" novalidate>
+          <div class="form-grid">
+            <label>
+              <span class="label-text">Name</span>
+              <input type="text" id="name" name="name" required placeholder="Your name">
+            </label>
+
+            <label>
+              <span class="label-text">Email</span>
+              <input type="email" id="email" name="email" required placeholder="youremail@gmail.com">
+            </label>
+
+            <label class="full">
+              <span class="label-text">Message</span>
+              <textarea id="message" name="message" required rows="5" placeholder="Hi Ms Nafisah, ..."></textarea>
+            </label>
+          </div>
+
+          <div class="form-actions">
+            <button type="submit" class="btn">Send (Frontend only)</button>
+            <a class="btn btn-outline" href="mailto:fromnafisah@gmail.com">Or email directly</a>
+          </div>
+
+          <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <a id="back-to-top" class="back-to-top hidden">↑</a>
+
+  <footer class="site-footer">
+  <div class="container footer-inner">
+    <p>© <span id="year"></span> Nafisah Amani. All rights reserved.</p>
+  </div>
+</footer>
+
+  <!-- PROJECT MODAL -->
+  <div id="project-modal" class="modal" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="modal-content" role="document">
+      <button class="modal-close" aria-label="Close project details">×</button>
+      <div id="modal-body"></div>
+    </div>
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
